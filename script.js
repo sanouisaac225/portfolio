@@ -2,7 +2,7 @@
 const phrases = [
   "Étudiant en Réseaux & Télécommunications",
   "Développeur Web — HTML / CSS / JS",
-  "Programmeur C & Sockets",
+  "Programmeur C / C++ / Python",
   "Passionné de systèmes embarqués"
 ];
 let pIdx = 0, cIdx = 0, deleting = false;
