@@ -337,7 +337,7 @@ section {
 /* ===========================
    COMPÉTENCES
    =========================== */
-.skills-container { display:grid; grid-template-columns:1fr 1fr; gap:55px; }
+.skills-container { display:grid; grid-template-columns:1fr 1fr 1fr; gap:45px; }
 .skills-cat {
   font-family:var(--font-head); font-size:0.82rem; letter-spacing:3px;
   color:var(--primary); margin-bottom:22px;
@@ -429,6 +429,9 @@ footer {
   section { padding:80px 6%; }
   .about-grid { grid-template-columns:1fr; gap:28px; }
   .skills-container { grid-template-columns:1fr; gap:32px; }
+}
+@media (max-width: 1200px) and (min-width: 981px) {
+  .skills-container { grid-template-columns:1fr 1fr; }
   .projects-grid { grid-template-columns:1fr; }
   .footer-inner { flex-direction:column; gap:14px; text-align:center; }
 }
