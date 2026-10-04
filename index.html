@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Orbitfolio — le portfolio 3D de Sanou Dedugu Isaac Mohamed Junior, étudiant en réseaux et télécommunications à Abidjan." />
+    <meta name="theme-color" content="#0c0e0b" />
+    <title>Orbitfolio — Sanou Isaac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+      <div class="noise" aria-hidden="true"></div>
+
+      <header class="site-header" id="siteHeader">
+        <a class="wordmark" href="#top" aria-label="Retour en haut">
+          <span class="wordmark-mark"><span></span><span></span></span>
+          <span>SANOU <em>/ 225</em></span>
+        </a>
+        <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+          <a class="nav-link is-active" href="#about" data-nav="about"><span>01</span> À propos</a>
+          <a class="nav-link" href="#formation" data-nav="formation"><span>02</span> Formation</a>
+          <a class="nav-link" href="#skills" data-nav="skills"><span>03</span> Skills</a>
+          <a class="nav-link" href="#projects" data-nav="projects"><span>04</span> Projets</a>
+          <a class="nav-link" href="#contact" data-nav="contact"><span>05</span> Contact</a>
+        </nav>
+        <div class="header-actions">
+          <span class="status-dot"><i></i> Disponible</span>
+          <a class="header-cv" href="./assets/CV_Isaac_Sanou_2026.pdf" download aria-label="Télécharger mon CV">CV <span>↓</span></a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section-shell" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow reveal"><span class="eyebrow-line"></span> Étudiant en IRST <span class="eyebrow-code">[ABJ · 05°20'N]</span></p>
+            <h1 class="hero-title reveal" id="hero-title">Construire.<br /><span>Connecter.</span><br /><i>Évoluer.</i></h1>
+            <p class="hero-lead reveal">Je suis <strong>Sanou Isaac</strong>, étudiant en Licence Réseaux &amp; Télécommunications. Je transforme la curiosité technique en bases solides — une ligne de code, un protocole, une idée à la fois.</p>
+            <div class="hero-cta reveal">
+              <a class="button button-primary" href="#projects">Explorer mes projets <span>↘</span></a>
+              <a class="button button-ghost" href="#contact">Me contacter <span>↗</span></a>
+            </div>
+            <div class="hero-note reveal"><span class="note-symbol">✳</span><span>Passionné par les télécommunications, les réseaux et les systèmes qui<br />font circuler les idées.</span></div>
+          </div>
+
+          <div class="hero-scene" aria-label="Animation décorative d'une planète en orbite">
+            <div class="scene-label scene-label-top"><span>SCÈNE 001</span><span>ORBIT / ACTIVE</span></div>
+            <canvas id="particleCanvas" aria-hidden="true"></canvas>
+            <div class="space-grid" aria-hidden="true"></div>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="orbit orbit-three" aria-hidden="true"></div>
+            <div class="planet-shadow" aria-hidden="true"></div>
+            <div class="planet-core" aria-hidden="true">
+              <div class="planet-glow"></div>
+              <div class="planet-surface"><span class="surface-line line-a"></span><span class="surface-line line-b"></span><span class="surface-line line-c"></span></div>
+              <div class="planet-letter">S</div>
+            </div>
+            <div class="scene-card scene-card-main"><span class="scene-card-kicker">NODE / 225</span><strong>DEDUGU ISAAC MOHAMED JUNIOR<br />SANOU</strong><span class="scene-card-foot">NETWORKS · TELECOM · SYSTEMS</span></div>
+            <div class="scene-card scene-card-side"><span>STATUS</span><strong>LEARNING<br />IN PROGRESS</strong><i></i></div>
+            <div class="scene-coordinates">05°20′N<br />04°01′W</div>
+            <div class="scene-label scene-label-bottom"><span>MOVE YOUR CURSOR</span><span>SCROLL TO TRAVEL ↓</span></div>
+          </div>
+          <div class="hero-bottom reveal">
+            <span>01 — PORTFOLIO PERSONNEL</span>
+            <span class="hero-scroll"><i></i> Scroll to explore</span>
+            <span>2026 — PRÉSENT</span>
+          </div>
+        </section>
+
+        <div class="signal-ticker" aria-hidden="true"><div class="ticker-track"><span>RÉSEAUX</span><b>✳</b><span>TÉLÉCOMMUNICATIONS</span><b>✳</b><span>SYSTÈMES EMBARQUÉS</span><b>✳</b><span>BASES DE DONNÉES</span><b>✳</b><span>DÉVELOPPEMENT WEB</span><b>✳</b><span>RÉSEAUX</span><b>✳</b><span>TÉLÉCOMMUNICATIONS</span><b>✳</b><span>SYSTÈMES EMBARQUÉS</span><b>✳</b><span>BASES DE DONNÉES</span><b>✳</b><span>DÉVELOPPEMENT WEB</span></div></div>
+
+        <section class="content-section section-shell" id="about" data-section="about" aria-labelledby="about-title">
+          <div class="section-intro reveal"><span class="section-number">01 / 05</span><h2 id="about-title">Une curiosité<br /><em>en réseau.</em></h2><p>Chaque système a une logique. Mon rôle est de la comprendre, puis de la rendre utile.</p></div>
+          <div class="about-layout">
+            <div class="about-card reveal"><div class="about-card-top"><span>PROFILE.DAT</span><span>READ_ONLY</span></div><div class="profile-mark"><div class="profile-ring"></div><img src="./assets/photo-identite.jpg" alt="Photo d’identité de Sanou Isaac" /><span class="profile-cross profile-cross-a"></span><span class="profile-cross profile-cross-b"></span></div><div class="profile-details"><span>Sanou Dedugu Isaac<br />Mohamed Junior</span><span>Abidjan, Côte d’Ivoire<br />Licence 3 · IRST</span></div></div>
+            <div class="about-copy reveal"><p class="large-copy">Je suis étudiant en <mark>Licence Réseaux &amp; Télécommunications</mark> à l’Université Félix Houphouët-Boigny d’Abidjan.</p><p>Passionné par les télécommunications, l’administration réseau, les systèmes embarqués, les bases de données et le développement web, je m’exerce chaque jour à résoudre des problèmes algorithmiques et à comprendre l’architecture des systèmes.</p><p>Curieux, rigoureux et toujours en apprentissage, j’aime transformer les problèmes complexes en solutions élégantes. Ici, tu peux suivre le chemin.</p><div class="about-facts"><div><span>LOCALISATION</span><strong>ABIDJAN / CI</strong></div><div><span>LANGUES</span><strong>FR · EN</strong></div><div><span>FOCUS</span><strong>RÉSEAUX · TÉLÉCOMS · SYSTÈMES</strong></div></div></div>
+          </div>
+        </section>
+
+        <section class="content-section section-shell" id="formation" data-section="formation" aria-labelledby="formation-title">
+          <div class="section-intro section-intro-row reveal"><div><span class="section-number">02 / 05</span><h2 id="formation-title">Les bases<br /><em>avant le saut.</em></h2></div><p>Une formation scientifique, des protocoles concrets et une envie de comprendre ce qui se passe sous la surface.</p></div>
+          <div class="timeline">
+            <article class="timeline-item reveal"><div class="timeline-year">2026 <span>—</span> PRÉSENT</div><div class="timeline-dot"><i></i></div><div class="timeline-content"><p class="timeline-kicker">FORMATION / 01</p><h3>Licence en Réseaux<br />&amp; Télécommunications</h3><p class="timeline-place">Université Félix Houphouët-Boigny · UFR-SSMT · IMERTEL · Abidjan</p><div class="topic-list"><span>Programmation C</span><span>Sockets TCP/UDP</span><span>Télécommunications &amp; transmission</span><span>Linux &amp; réseaux locaux</span><span>Électronique numérique</span><span>Bases de données</span><span>Automates &amp; langages</span></div></div></article>
+            <article class="timeline-item reveal"><div class="timeline-year">2023 <span>—</span> 2024</div><div class="timeline-dot"><i></i></div><div class="timeline-content"><p class="timeline-kicker">FORMATION / 02</p><h3>Baccalauréat<br />Scientifique — Série D</h3><p class="timeline-place">Abidjan, Côte d’Ivoire</p><p class="timeline-description">Spécialité Mathématiques &amp; Sciences Physiques. La première impulsion vers les systèmes, la logique et la résolution de problèmes.</p></div></article>
+          </div>
+        </section>
+
+        <section class="content-section section-shell" id="skills" data-section="skills" aria-labelledby="skills-title">
+          <div class="section-intro section-intro-row reveal"><div><span class="section-number">03 / 05</span><h2 id="skills-title">Une boîte<br /><em>à outils.</em></h2></div><p>Des fondamentaux en construction, mesurés avec honnêteté et renforcés par la pratique.</p></div>
+          <div class="skills-grid">
+            <article class="skill-card skill-card-wide reveal"><div class="skill-card-head"><span>01</span><h3>Langages &amp;<br />développement</h3><span class="skill-icon">{ }</span></div><div class="skill-bars"><div class="skill-row"><div><span>C / Sockets</span><b>55%</b></div><div class="bar"><i style="--value:55%"></i></div></div><div class="skill-row"><div><span>HTML / CSS / JS</span><b>70%</b></div><div class="bar"><i style="--value:70%"></i></div></div><div class="skill-row"><div><span>Python</span><b>55%</b></div><div class="bar"><i style="--value:55%"></i></div></div><div class="skill-row"><div><span>SQL / Bases de données</span><b>75%</b></div><div class="bar"><i style="--value:75%"></i></div></div></div></article>
+            <article class="skill-card reveal"><div class="skill-card-head"><span>02</span><h3>Réseaux &amp;<br />télécoms</h3><span class="skill-icon">◌</span></div><div class="skill-bars"><div class="skill-row"><div><span>TCP/UDP · Protocoles</span><b>45%</b></div><div class="bar"><i style="--value:45%"></i></div></div><div class="skill-row"><div><span>Linux</span><b>65%</b></div><div class="bar"><i style="--value:65%"></i></div></div><div class="skill-row"><div><span>Électronique numérique</span><b>50%</b></div><div class="bar"><i style="--value:50%"></i></div></div><div class="skill-row"><div><span>Git &amp; GitHub</span><b>60%</b></div><div class="bar"><i style="--value:60%"></i></div></div></div></article>
+            <article class="skill-card skill-card-dark reveal"><div class="skill-card-head"><span>03</span><h3>Outils &amp;<br />bureautique</h3><span class="skill-icon">⌁</span></div><div class="tool-chips"><span>Docker <small>notions</small></span><span>Word</span><span>Excel</span><span>PowerPoint</span><span>LaTeX</span></div><div class="skill-card-foot">LEARN / BUILD / REPEAT</div></article>
+          </div>
+        </section>
+
+        <section class="content-section section-shell projects-section" id="projects" data-section="projects" aria-labelledby="projects-title">
+          <div class="section-intro section-intro-row reveal"><div><span class="section-number">04 / 05</span><h2 id="projects-title">Des idées<br /><em>en mouvement.</em></h2></div><p>Des expériences personnelles pour mettre les concepts à l’épreuve et faire circuler les idées.</p></div>
+          <div class="project-toolbar reveal"><span>SELECTED WORKS / 2024—2026</span><div class="filter-list" role="group" aria-label="Filtrer les projets"><button class="filter-btn is-selected" data-filter="all" aria-pressed="true">Tout</button><button class="filter-btn" data-filter="code" aria-pressed="false">Code</button><button class="filter-btn" data-filter="web" aria-pressed="false">Web</button></div></div>
+          <div class="projects-grid">
+            <article class="project-card project-featured reveal" data-category="code"><a href="https://github.com/sanouisaac225/tp-sockets" target="_blank" rel="noreferrer" aria-label="Voir le projet TP Sockets sur GitHub"><div class="project-art sockets-art"><div class="terminal-window"><span class="terminal-top"><i></i><i></i><i></i><em>socket_server.c</em></span><code><span class="code-muted">01</span> <b>while</b> (client_connected) {<br /><span class="code-muted">02</span> &nbsp; listen(<span class="code-accent">TCP</span>);<br /><span class="code-muted">03</span> &nbsp; send(<span class="code-accent">UDP</span>, data);<br /><span class="code-muted">04</span> }</code></div><span class="art-orbit art-orbit-a"></span><span class="art-orbit art-orbit-b"></span><span class="art-node node-a"></span><span class="art-node node-b"></span><span class="art-node node-c"></span></div><div class="project-info"><div><span class="project-index">01 / 03</span><h3>TP Sockets —<br /><em>Réseau C</em></h3></div><span class="project-arrow">↗</span><p>Serveur TCP multi-threads et calculatrice UDP en C. Gestion des connexions simultanées et protocole de communication personnalisé.</p><div class="project-tags"><span>C</span><span>TCP/IP</span><span>Multi-threads</span><span>UDP</span></div></div></a></article>
+            <article class="project-card project-web reveal" data-category="web"><a href="https://sanouisaac225.github.io/portfolio/" target="_blank" rel="noreferrer" aria-label="Voir le portfolio personnel actuel"><div class="project-art web-art"><div class="web-frame"><span class="web-frame-top"><b>SANOU / 225</b><i>×</i></span><div class="web-frame-content"><span class="web-line line-long"></span><span class="web-line line-short"></span><div class="web-circle">S</div><span class="web-line line-mid"></span></div></div><span class="web-star">✳</span></div><div class="project-info"><div><span class="project-index">02 / 03</span><h3>Portfolio<br /><em>Personnel</em></h3></div><span class="project-arrow">↗</span><p>Site portfolio animé avec particules interactives, effet de frappe, transitions CSS et design responsive.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Canvas</span></div></div></a></article>
+            <article class="project-card project-next reveal" data-category="all"><div class="project-art next-art"><div class="next-cross">+</div><span class="next-ring ring-a"></span><span class="next-ring ring-b"></span><span class="next-label">INCOMING<br />SIGNAL</span></div><div class="project-info"><div><span class="project-index">03 / 03</span><h3>Étude IRST<br /><em>à venir...</em></h3></div><span class="project-arrow">→</span><p>Prochaine étude personnelle autour des télécommunications, de la transmission et des systèmes réseau.</p><div class="project-tags"><span>Bientôt</span><span>2026</span></div></div></article>
+          </div>
+        </section>
+
+        <section class="contact-section section-shell" id="contact" data-section="contact" aria-labelledby="contact-title">
+          <div class="contact-orbit" aria-hidden="true"><span></span><span></span><span></span><b>S</b></div>
+          <div class="contact-copy reveal"><span class="section-number">05 / 05</span><h2 id="contact-title">Ouvrons<br /><em>la connexion.</em></h2><p>Disponible pour un stage, une collaboration, un projet open-source ou simplement une conversation autour de la tech.</p><div class="contact-actions"><a class="button button-primary" href="mailto:sanouisaac225@gmail.com">Envoyer un signal <span>↗</span></a><a class="button button-ghost" href="./assets/CV_Isaac_Sanou_2026.pdf" download>Télécharger CV <span>↓</span></a></div></div>
+          <div class="contact-details reveal"><a href="mailto:sanouisaac225@gmail.com"><span>EMAIL</span><strong>sanouisaac225@gmail.com</strong></a><a href="tel:+2250594707595"><span>TÉLÉPHONE</span><strong>+225 05 94 70 75 95</strong></a><a href="https://github.com/sanouisa225" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>github.com/sanouisa225 ↗</strong></a></div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-shell"><a class="wordmark" href="#top"><span class="wordmark-mark"><span></span><span></span></span><span>SANOU <em>/ 225</em></span></a><span>FAIT AVEC CURIOSITÉ · ABIDJAN, CI</span><span>© <span id="currentYear">2026</span> — TOUS DROITS RÉSERVÉS</span></footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
