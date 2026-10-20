@@ -15,6 +15,3 @@ git push origin main
 ```
 
 4. Dans GitHub : **Settings → Pages → Deploy from a branch → main → / (root)**.
-
-Le QR code du CV pointe vers :
-`https://sanouisa225.github.io/portfolio/`
